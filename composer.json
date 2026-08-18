@@ -17,13 +17,8 @@
     ],
     "require": {
         "php": ">=7.1.3",
-        "predicthq/address-formatter-templates": "~1.0",
         "symfony/yaml": ">=4.0",
         "mustache/mustache": "~2.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^5.3",
-        "satooshi/php-coveralls": "^1.0"
     },
     "autoload": {
         "psr-4": {
