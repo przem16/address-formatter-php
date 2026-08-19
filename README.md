@@ -1,17 +1,17 @@
 # Address Formatter for PHP
 
-[![Build Status](https://travis-ci.org/predicthq/address-formatter-php.svg?branch=master)](https://travis-ci.org/predicthq/address-formatter-php)
-[![Coverage Status](https://coveralls.io/repos/github/predicthq/address-formatter-php/badge.svg?branch=master)](https://coveralls.io/github/predicthq/address-formatter-php?branch=master)
+This library uses the address templates from <https://github.com/OpenCageData/address-formatting> to format addresses differently depending on the country.
 
-This library uses the address templates from <https://github.com/OpenCageData/address-formatting> to format addresses
-differently depending on the country.
+### Requirements
+
+- PHP 7.1.3 or later
 
 ### Installation
 
-Install the latest version with
+Install the latest version with Composer:
 
 ```bash
-$ composer require osmsupport/address-formatter
+composer require przem16/address-formatter
 ```
 
 
@@ -22,8 +22,8 @@ You can use either the `Address` object or provide an array of address parts.
 ```php
 use PredictHQ\AddressFormatter\Address;
 
-$a = new Address();
-$a->setCity('Wellington')
+$address = new Address();
+$address->setCity('Wellington')
   ->setCountry('New Zealand')
   ->setCountryCode('NZ')
   ->setCounty('Wellington City')
@@ -33,7 +33,7 @@ $a->setCity('Wellington')
   ->setState('Wellington')
   ->setSuburb('Mount Victoria');
 
-$text = $a->format();
+$text = $address->format();
 
 /**
  * Will display as:
@@ -71,8 +71,8 @@ $address = [
  * Wellington 6011
  * New Zealand
  */
-$f = new Formatter();
-$actual = $f->formatArray($address);
+$formatter = new Formatter();
+$text = $formatter->formatArray($address);
 ```
 
 ### Tests
