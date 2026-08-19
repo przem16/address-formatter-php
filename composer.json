@@ -1,18 +1,26 @@
 {
-    "name": "osmsupport/address-formatter",
+    "name": "przem16/address-formatter",
     "description": "Address formatter using country templates from https://github.com/OpenCageData/address-formatting",
-    "keywords": ["predicthq","address"],
+    "homepage": "https://github.com/przem16/address-formatter-php",
+    "keywords": ["address", "formatter", "geocoding", "postal-address"],
     "type": "library",
     "license": "MIT",
+	"support": {
+        "issues": "https://github.com/przem16/address-formatter-php/issues"
+    },
     "authors": [
         {
+            "name": "Przemysław Sidz",
+            "homepage": "https://github.com/przem16",
+            "role": "Maintainer"
+        },
+        {
             "name": "PredictHQ",
-            "homepage": "https://developer.predicthq.com"
+            "role": "Original author"
         },
         {
             "name": "Robert Kern",
-            "homepage": "http://www.robertkern.com",
-            "role": "Developer"
+            "role": "Original developer"
         }
     ],
     "require": {
